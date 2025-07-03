@@ -12,15 +12,15 @@
 Для выполнения запроса от клиента через SOCKS5-прокси можно использовать утилиту `curl` из консоли. Пример команды:
 
 ```bash
-curl --http0.9 --socks5-hostname 192.168.0.112:1080 http://ifconfig.me --output -
+curl --http0.9 --socks5-hostname <ip>:1080 http://ifconfig.me --output -
 ```
 Где:
-* `192.168.0.112:1080` — IP-адрес и порт, на котором работает ваш прокси-сервер.
+* `<ip>:1080` — IP-адрес и порт, на котором работает ваш прокси-сервер.
 * `http://ifconfig.me` — URL, к которому осуществляется запрос (можно заменить на любой другой).
 
 Пример с другим ресурсом:
 ```bash
-curl --socks5-hostname 192.168.0.112:1080 https://example.com --output -
+curl --socks5-hostname <ip>:1080 https://example.com --output -
 ```
 
 ## Заметки
